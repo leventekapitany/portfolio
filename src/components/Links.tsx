@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
+import { useRef } from 'react';
+
 import Github from './Github';
 import down from '../assets/down.svg';
 import linkedin from '../assets/linkedin.svg';
 
 export default function Links() {
+  const tomRef = useRef<HTMLAudioElement>(null);
+
   function scroll() {
     window.scrollTo({ top: window.innerHeight + 50, behavior: 'smooth' });
+    tomRef.current?.play();
   }
 
   return (
@@ -16,6 +21,9 @@ export default function Links() {
         <a id="linkedin" href="https://www.linkedin.com/in/levente-kapitany/">
           <img src={linkedin} />
         </a>
+        <audio id="tom" ref={tomRef}>
+          <source src="https://tripled.hu/tom-scream.mp3" type="audio/mp3" />
+        </audio>
       </Profiles>
 
       <CV onClick={scroll}>
