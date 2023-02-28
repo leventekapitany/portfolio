@@ -21,12 +21,12 @@ export default function Links() {
         <a id="linkedin" href="https://www.linkedin.com/in/levente-kapitany/">
           <img src={linkedin} />
         </a>
-        <audio id="tom" ref={tomRef}>
+        {/* <audio id="tom" ref={tomRef}>
           <source src="https://tripled.hu/tom-scream.mp3" type="audio/mp3" />
-        </audio>
+        </audio> */}
       </Profiles>
 
-      <CV onClick={scroll}>
+      <CV>
         <span>resume</span>
         <img src={down} />
       </CV>
