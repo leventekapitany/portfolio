@@ -28,6 +28,7 @@ const Main = styled.div`
   height: 100vh;
   align-items: center;
   display: flex;
+  gap: 40px;
   flex-flow: column;
 `;
 

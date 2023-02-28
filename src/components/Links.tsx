@@ -11,7 +11,6 @@ export default function Links() {
 
   function scroll() {
     window.scrollTo({ top: window.innerHeight + 50, behavior: 'smooth' });
-    tomRef.current?.play();
   }
 
   return (
@@ -26,7 +25,7 @@ export default function Links() {
         </audio> */}
       </Profiles>
 
-      <CV>
+      <CV onClick={scroll}>
         <span>resume</span>
         <img src={down} />
       </CV>
@@ -51,6 +50,17 @@ const CV = styled.div`
   align-items: center;
   img {
     height: 24px;
+    color: red;
+  }
+  animation: colorChange 1.4s ease infinite alternate;
+
+  @keyframes colorChange {
+    from {
+      color: white;
+    }
+    to {
+      color: grey;
+    }
   }
 `;
 
