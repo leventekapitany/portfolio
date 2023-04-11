@@ -20,6 +20,10 @@ export default function Greeting() {
 }
 
 const Root = styled.div`
+  @media (max-width: 600px) {
+    padding-top: unset;
+  }
+
   padding-top: 100px;
   display: grid;
   place-items: center;
