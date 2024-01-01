@@ -13,7 +13,6 @@ export default function Greeting() {
         I help companies to build
         <br />
         state of the art softwares
-        <p>Currently working for GoTo Technologies</p>
       </Description>
     </Root>
   );
