@@ -1,3 +1,7 @@
 [[redirects]]
-from = ["/cv", "/cat"]
-to = { /cv = "/cv.pdf", /cat = "/cat.gif" }
+  from = "/cv"
+  to = "/cv.pdf"
+
+[[redirects]]
+  from = "/cat"
+  to = "/cat.gif"
