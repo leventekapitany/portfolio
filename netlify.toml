@@ -1,3 +1,6 @@
 [[redirects]]
   from = "/cv"
   to = "/cv.pdf"
+
+  from = "/cat"
+  to = "/cat.gif"
